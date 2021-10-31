@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>scope of variable</h1>
+    <script>
+        var x=2;
+        var y=3;
+        // Here x and y are global variable.
+        console.log("x+y="+(x+y));
+
+        function add() {
+            var x=5;
+            var y=6;
+            // Here x and y are local variable.
+            console.log(`The addition of ${x} and ${y}: `+(x+y));
+            sub();
+        }
+        add();
+         function sub() {
+            //  Here value of x and y are global.
+            console.log(`The subtraction of ${x} and ${y}: `+(x-y)); 
+         }
+
+    </script>
+</body>
+</html>
